@@ -1,0 +1,64 @@
+html{
+    box-sizing: border-box;
+    font-size: 17px;
+}
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    background-color: #2f3336 ;
+    color: black;
+}
+nav {
+    background-color:deepskyblue ;
+    /* display: flex; */
+    justify-content: flex-end;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.navi ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid blue;
+    /* flex-flow: row wrap; */
+    justify-content: flex-end;
+   
+    padding: 20px 5px;
+
+}
+.navi a {
+    text-decoration: none;
+    display: block;
+    /* padding: 0.75em; */
+    color:  white;
+    
+}
+.navi li {
+    /* flex:9; */
+    align-items: center;
+    
+}
+.navi .icons {
+    /* align-items: flex-start; */
+    /* flex: 1; */
+}
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0,3);
+    padding: 20 px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all 0,5s;
+}
+.navi a:hover {
+    background: rgba(0,0,0,0.3);
+}
+.navilinks a{
+    font-weight: bold;
+}
