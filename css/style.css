@@ -1,81 +1,126 @@
 html{
     box-sizing: border-box;
     font-size: 17px;
+    font-family: 'Lato', sans-serif;
 }
 *, *::before, *:after {
     box-sizing: inherit;
 }
 body {
     margin: 0;
-    background-color: #2f3336 ;
+    background-color: #f3f2f4 ;
     color: black;
 
 }
-nav {
+.navi {
     display: flex;
-    background-color:deepskyblue ;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    height: 3em;
+    height: 60px;
+    /* border: 5px solid pink; */
+    align-items: stretch;
+    position: fixed;
+    /* opacity: 0.7; */
+    width: 100%;
+    
 }
 .navi ul {
     display: flex;
+    background: rgba(103, 103, 103,0.3) ;
     list-style: none;
-    border: 1px solid blue;
-    /* flex-flow: row wrap; */
-    
-
+    width: 100vh;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
-ul{
-    height:100%;
+@media screen and (max-width: 700px){
+    3navi ul {
+        flex-direction: column;
+    }
 }
 .navi a {
+    color: rgb(247, 247, 239);
     text-decoration: none;
-    display: flex;
-    /* padding: 0.75em; */
-    color:  white;
-    align-items: center;
-    
-}
-.navi > a:first-child {
-    align-items: center;
-}
-.navi li {
-    /* flex:9; */
-    /* align-items: center; */
-    
-}
-
-a {
-    color: white;
-    font-weight: 100;
-    letter-spacing: 2px;
-    background: rgba(0, 0, 0, 0,3);
-    padding: 20 px 5px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    transition: all 0,5s;
+    display: block;
+    transition: background .1s;
 }
 .navi a:hover {
-    background: rgba(0,0,0,0.3);
+    background: #797979;
 }
-.navilinks a{
+li.icons {
+
+    font-size: 30px;
+}
+li.navilinks {
     font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0 10px 0 10px;
+}
+ul.navi-text {
+    display: flex;
+    justify-content: flex-end;
+    flex: 6;
+    /* border: 5px solid green; */
+}
+ul.social-icons {
+    flex: 1;
+    /* border: 5px solid gold; */
+    justify-content: space-evenly;
+    
+    
 }
 .image {
-    position: relative;
+    /* position: relative; */
     display: flex;
-    
     text-align: end;
 }
 h1 { 
     position: absolute; 
-    top: 50px;
+    top: 70px;
     right: 100px;
     width: 100%; 
     font-family: 'Lato', sans-serif;
  }
- p, h3 {
-    font-family: 'Lato', sans-serif;
+ 
+ /* sekcja about */
+ /* containerem będzie article o id about */
+ #about {
+     /* border: 10px solid gold; */
  }
+ .person-info {
+     display: flex;
+     justify-content: center;
+ }
+ #personal-data {
+     flex: 1;
+     text-align: left;
+     padding: 50px;
+ }
+ #personal-description {
+     flex: 2;
+     padding: 50px;
+ }
+  h3{
+     display: block;
+     text-align: center;
+     letter-spacing: 2px;
+     font-size: 1.5em;
+     padding: 10px;
+     background: lightgray;
+     margin: 0;
+ }
+
+ /* Sekcja technology */
+ #containter-techno {
+     display: flex;
+     padding-top: 15px;
+     
+ }
+ .techno {
+     flex: 1;
+     text-align: center;
+ }
+div.techno > i {
+    font-size: 80px;
+}
+div.techno p {
+    font-weight: bold;
+}

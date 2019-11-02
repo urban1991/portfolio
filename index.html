@@ -24,7 +24,7 @@
 <body>
     <header class="container">
         <nav class="navi">
-            <ul>
+            <ul class="social-icons">
                 <li class="icons"><a href="https://github.com/urban1991"><i class="fab fa-github-square"></i></a>
                 </li>
                 <li class="icons"><a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
@@ -33,9 +33,11 @@
                 </li>
                 <li class="icons"><a href="https://pl.linkedin.com/"><i class="fab fa-linkedin"></i></a>
                 </li>
+            </ul>
+            <ul class="navi-text"> 
                 <li class="navilinks"><a href="#">About Me</a></li>
                 <li class="navilinks"><a href="#">Technology</a></li>
-                <li class="navilinks"><a href="#">Portlofio</a></li>
+                <li class="navilinks"><a href="#">Portfolio</a></li>
                 <li class="navilinks"><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -45,68 +47,74 @@
         </div>
     </header>
     <article id="about">
-        <h3>About me</h3>
-        <div>
+        <div class="naglowki"><h3>About me</h3></div>
+        <div class="person-info">
+        <div id="personal-data">
             <p><b>Full name: </b>John Doe</p>
             <p><b>Age: </b>28</p>        
             <p><b>Profile: </b>Web Developer</p>  
             <p><b>Telephone: </b>777-888-999</p>
             <p><b>E-mail: </b>username@gmail.com</p>
         </div>   
-        <div>
+        <div id="personal-description">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Similique hic magnam, ullam odit, perferendis recusandae quis laboriosam, 
                  eos accusantium molestias a soluta eligendi obcaecati dignissimos quod dolorum
                  alias ab aliquam! Dolores vel non obcaecati eligendi officia delectus perspiciatis
                  fugiat pariatur eos rem molestias consequatur asperiores consequuntur, repellat
-                  soluta accusantium unde laudantium, iusto deserunt suscipit beatae dolore. 
+                  soluta accusantium unde laudantium, iusto deserunt suscipit beatae dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique hic magnam, ullam odit, perferendis recusandae quis laboriosam, 
+                  eos accusantium molestias a soluta eligendi
             </p>
 
         </div>
-
+    </div>
     </article>
     
     <article id="technology">
             <h3>Technology</h3>
-        <div>
-                <i class="fab fa-html5"></i>
+     <div id="containter-techno">
+        <div class="techno">
+                <i class="fab fa-html5" ></i>
                 <p>HTML5</p>
                 <p>Modern responsive websites</p>
         </div>
-        <div>
+        <div class="techno">
                 <i class="fab fa-css3-alt"></i>
                 <p>CSS3</p>
                 <p>Beaufiful design</p>
         </div>
-        <div>
+        <div class="techno">
                 <i class="fab fa-js"></i>
                 <p>JavaScript</p>
                 <p>Live features</p>
         </div>
-        <div>
+        <div class="techno">
                 <i class="fab fa-node"></i>
                 <p>Node.js</p>
                 <p>Backend programming support</p>
         </div>
-        <div>
+        <div class="techno">
                 <i class="fab fa-figma"></i>
                 <p>UI/UX</p>
                 <p>Figma</p>
         </div>
-
+    </div>
         
     </article>
         
     <article id="portfolio">
         <h3>Portfolio</h3>
         <p>Finished projects</p>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
+    <div class="gallery-container">
+        <div class="gallery"><img src="bakery.jpg" alt="strona o piekarni"></div>
+        <div class="gallery"><img src="travel_site.jpg" alt="blog podróżniczy"></div>
+        <div class="gallery"><img src="program.jpg" alt="blog poświęcony programowaniu front-end"></div>
+        <div class="gallery"><img src="zero_waste.jpg" alt="blog poświęcony Zero Waste"></div>
+        <div class="gallery"><img src="coffe_shop.jpg" alt="Strona kawiarni"></div>
+        <div class="gallery"><img src="pizza_blog.jpg" alt="Blog o pizzy"></div>
+    </div>
     </article>
     
     <article id="contact">
@@ -125,10 +133,10 @@
         <div>
             <form action="#">
                 <p>
-                <input type="text" placeholder="Name" required name="name"/>
+                    <input type="text" placeholder="Name" required name="name"/>
                 </p>
                 <p>
-                <input type="text" placeholder="Email" required name="email" >
+                    <input type="text" placeholder="Email" required name="email" >
                 </p>
                 <p>
                     <input type="text" placeholder="Topic" required name="topic">
