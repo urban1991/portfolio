@@ -2,6 +2,7 @@ html{
     box-sizing: border-box;
     font-size: 17px;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 *, *::before, *:after {
     box-sizing: inherit;
@@ -12,6 +13,19 @@ body {
     color: #1F2020;
 
 }
+h3{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    padding: 10px;
+    background:#555;
+    color: #F9F6EF;
+    margin: 0;
+}
+
+/* Sekcja nawigacyjna */
+
 .navi {
     display: flex;
     height: 3.53em;
@@ -21,26 +35,17 @@ body {
     z-index: 5;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
      0 2px 10px 0 rgba(0,0,0,0.12);
-    
 }
+
 .navi ul {
     display: flex;
     background: rgba(103, 103, 103,0.3) ;
     list-style: none;
-    /* width: 100vh; */
     align-items: center;
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 50em){
-    .navi, .person-info {
-        flex-direction: column;
-    }
-    
 
-    
-
-}
 .navi a {
     color: rgb(247, 247, 239);
     text-decoration: none;
@@ -49,32 +54,39 @@ body {
     padding: 15px;
     
 }
+
 .navi li:hover {
     background: #797979;
     opacity: 0.9;
 }
+
 li.icons {
     font-size: 30px;
 }
+
 li.navilinks {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     padding: 0 10px 0 10px;
 }
+
 ul.navi-text {
     display: flex;
     justify-content: flex-end;
     flex: 6;
 }
+
 ul.social-icons {
     flex: 1;
     justify-content: space-evenly;
 }
+
 .image {
     display: flex;
     text-align: end;
-    /* width: 100%; */
+
 }
+
 .image img {
    max-width: 100%;
    height: auto;
@@ -89,26 +101,30 @@ h1 {
  }
  
  /* sekcja about */
- /* containerem będzie article o id about */
+ 
+
  #about {
      width: 100%;
  }
+
  #about h3 {
      background:#E4E4E2;
      color: #1F2020;
  }
+
  .person-info {
      display: flex;
      justify-content: center;
  }
+
  #personal-data {
      flex: 1;
      text-align: left;
      padding: 2.94em 2.94em 2.94em 8.82em;
-     
  }
  
  #personal-description {
+     display: flex;
      flex: 2;
      margin: 2.94em;
      padding: 0 2.94em 0 2.94em;
@@ -117,79 +133,75 @@ h1 {
      font-size: 1.2em;
      word-wrap: break-word;
      hyphens: auto;
-
-
+     overflow: auto;
+     max-height: 17.5em;
  }
-  h3{
-     display: flex;
-     justify-content: center;
-     letter-spacing: 2px;
-     font-size: 1.5em;
-     padding: 10px;
-     background:#555;
-     color: #F9F6EF;
-     margin: 0;
-     
- }
+ 
 
  /* Sekcja technology */
+
  #technology {
      background: #555;
  }
  
  
- #containter-techno {
+ #container-techno {
      display: flex;
      width: 100%;
  }
- #containter-techno > :first-child {
+ #container-techno > :first-child {
      background:#F16528;
  }
- #containter-techno > :nth-child(2) {
+ #container-techno > :nth-child(2) {
     background:#33adff;
  }
- #containter-techno > :nth-child(3) {
+ #container-techno > :nth-child(3) {
     background:#d6c912;
  }
- #containter-techno > :nth-child(4) {
+ #container-techno > :nth-child(4) {
     background:#47d147;
  }
- #containter-techno > :last-child{
+#container-techno > :last-child{
     background:#e600ac;
  }
- .techno {
+
+.techno {
      flex: 1;
      text-align: center;
      padding-top: 15px;
      margin: 20px 12px;
      transition: transform 0.3s ease ;
-     
  }
-  .techno:hover {
-     /* background:black ; */
-    
+
+.techno:hover {
      cursor: pointer;
      transform: scale(1.2);
-
  }
 
 div.techno > i {
     font-size: 80px;
 }
+
 .techno > p:nth-child(2) {
     font-weight: 900;
     letter-spacing: 1px;
     font-size: 1.2em;
 }
+
 .techno > p:last-child {
     font-weight: 700;
 }
+
+
 /* sekcja portfolio */
+
+
 #portfolio h3 {
     background: #E4E4E2;
     color:#1F2020 ;
     padding-bottom: 15px;
 }
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -197,13 +209,12 @@ div.techno > i {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    
 }
-
 
 .overlay {
     position: relative;
 }
+
 .overlay .link-gallery {
     position: absolute;
     display: block;
@@ -219,12 +230,13 @@ div.techno > i {
     transform: translateY(100%);
     color: #F9F6EF;
     font-weight: 700;
-
 }
+
 .overlay:hover .link-gallery {
     opacity: 0.8;
     transform: translateY(0);
 }
+
 /* Sekcja adress/contact */
 
 .adress-container {
@@ -232,17 +244,19 @@ div.techno > i {
     width: 100%;
     background-color: #555;
     color: #F9F6EF;
-   
 }
+
 .adress-info, .adress-form {
     flex: 1;
 }    
+
 .adress-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 40px;
 }
+
 address {
     font-size: 1.3em;
     line-height: 1.5em;
@@ -254,37 +268,53 @@ form {
    display: flex;
    flex-direction: column;
    padding-right: 30px;
-   
 }
+
 form p {
- border:  1px solid #4b4b4c;
- /* padding: 10px; */
- /* background: 4b4b4c; */
+   border:  1px solid #4b4b4c;
 }
+
 form p input {
-   
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    padding: 10px;
+   width: 100%;
+   border: none;
+   font-size: 16px;
+   padding: 10px;
 }
+
 form p:last-child {
     border: none;
 }
+
 #submit {
     padding: 10px;
     border: none;
     color: #F9F6EF;
     background: black;
-
 }
+
 #submit:hover {
     color: #555;
     cursor: pointer;
 }
+
+/* Sekcja footer */
+
 footer {
     display: flex;
     background: #E4E4E2;
     font-weight: 700;
     justify-content: center;
+}
+@media screen and (max-width: 50em){
+    .navi, .person-info, #container-techno {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 540px) {
+    .navi {
+        position: relative;
+    }
+    .navi-text {
+        flex-direction: column;
+    }
 }
