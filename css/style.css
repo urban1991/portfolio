@@ -69,8 +69,12 @@ ul.social-icons {
 .image {
     display: flex;
     text-align: end;
+    /* width: 100%; */
+}
+.image img {
     width: 100%;
 }
+
 h1 { 
     position: absolute; 
     top: 70px;
