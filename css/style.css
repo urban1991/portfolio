@@ -50,7 +50,6 @@ body {
     opacity: 0.9;
 }
 li.icons {
-
     font-size: 30px;
 }
 li.navilinks {
@@ -62,17 +61,12 @@ ul.navi-text {
     display: flex;
     justify-content: flex-end;
     flex: 6;
-    /* border: 5px solid green; */
 }
 ul.social-icons {
     flex: 1;
-    /* border: 5px solid gold; */
     justify-content: space-evenly;
-    
-    
 }
 .image {
-    /* position: relative; */
     display: flex;
     text-align: end;
 }
@@ -89,8 +83,6 @@ h1 {
  #about h3 {
      background:#E4E4E2;
      color: #1F2020;
-    
-     
  }
  .person-info {
      display: flex;
@@ -105,7 +97,8 @@ h1 {
  
  #personal-description {
      flex: 2;
-     padding: 50px;
+     margin: 50px;
+     padding: 0 50px 0 50px;
      border-left: 3px dashed #1F2020;
      text-align: justify;
      font-size: 1.2em;
@@ -193,9 +186,8 @@ div.techno > i {
     justify-content: space-around;
     
 }
-.gallery{
-    /* margin: 20px; */
-}
+
+
 .overlay {
     position: relative;
 }
