@@ -92,8 +92,10 @@ ul.social-icons {
 
 h1 { 
    position: absolute;
-   top: 30%;
-   left: 70%;
+   top: 5em;
+   right: 5em;
+   /* width: 100%; */
+
    color:#F9F6EF ;
  }
  
@@ -112,12 +114,14 @@ h1 {
  .person-info {
      display: flex;
      justify-content: center;
+     
  }
 
  #personal-data {
      flex: 1;
      text-align: left;
      padding: 2.94em 2.94em 2.94em 8.82em;
+     font-size: 1.2em;
  }
  
  #personal-description {
