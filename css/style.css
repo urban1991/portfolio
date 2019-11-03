@@ -14,7 +14,7 @@ body {
 }
 .navi {
     display: flex;
-    height: 60px;
+    height: 3.53em;
     align-items: stretch;
     position: fixed;
     width: 100%;
@@ -69,6 +69,7 @@ ul.social-icons {
 .image {
     display: flex;
     text-align: end;
+    width: 100%;
 }
 h1 { 
     position: absolute; 
@@ -80,6 +81,9 @@ h1 {
  
  /* sekcja about */
  /* containerem będzie article o id about */
+ #about {
+     width: 100%;
+ }
  #about h3 {
      background:#E4E4E2;
      color: #1F2020;
@@ -98,7 +102,7 @@ h1 {
  #personal-description {
      flex: 2;
      margin: 50px;
-     padding: 0 50px 0 50px;
+     padding: 0 2.94em 0 2.94em;
      border-left: 3px dashed #1F2020;
      text-align: justify;
      font-size: 1.2em;
@@ -108,8 +112,8 @@ h1 {
 
  }
   h3{
-     display: block;
-     text-align: center;
+     display: flex;
+     justify-content: center;
      letter-spacing: 2px;
      font-size: 1.5em;
      padding: 10px;
@@ -127,8 +131,7 @@ h1 {
  
  #containter-techno {
      display: flex;
-     
-     
+     width: 100%;
  }
  #containter-techno > :first-child {
      background:#F16528;
@@ -184,6 +187,7 @@ div.techno > i {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
     
 }
 
@@ -216,6 +220,7 @@ div.techno > i {
 
 .adress-container {
     display: flex;
+    width: 100%;
     background-color: #555;
     color: #F9F6EF;
    
@@ -233,21 +238,6 @@ address {
     font-size: 1.3em;
     line-height: 1.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Sekcja input formularza */
 
@@ -284,7 +274,8 @@ form p:last-child {
     cursor: pointer;
 }
 footer {
+    display: flex;
     background: #E4E4E2;
     font-weight: 700;
-    text-align: center;
+    justify-content: center;
 }
