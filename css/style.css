@@ -20,6 +20,7 @@ body {
     position: fixed;
     /* opacity: 0.7; */
     width: 100%;
+    z-index: 5;
     
 }
 .navi ul {
@@ -92,11 +93,15 @@ h1 {
  #personal-data {
      flex: 1;
      text-align: left;
-     padding: 50px;
+     padding: 50px 50px 50px 150px;
+     
  }
+ 
  #personal-description {
      flex: 2;
      padding: 50px;
+     border-left: 3px dashed black;
+
  }
   h3{
      display: block;
@@ -111,16 +116,93 @@ h1 {
  /* Sekcja technology */
  #containter-techno {
      display: flex;
-     padding-top: 15px;
      
+     
+ }
+ #containter-techno > :first-child {
+     background:#F16528;
+ }
+ #containter-techno > :nth-child(2) {
+    background:#33adff;
+ }
+ #containter-techno > :nth-child(3) {
+    background:#ffff00;
+ }
+ #containter-techno > :nth-child(4) {
+    background:#47d147;
+ }
+ #containter-techno > :last-child{
+    background:#e600ac;
  }
  .techno {
      flex: 1;
      text-align: center;
+     padding-top: 15px;
+     margin: 20px 12px;
+     transition: transform 0.3s ease ;
+     
  }
+  .techno:hover {
+     /* background:black ; */
+    
+     cursor: pointer;
+     transform: scale(1.2);
+
+ }
+
 div.techno > i {
     font-size: 80px;
 }
-div.techno p {
-    font-weight: bold;
+.techno > p:nth-child(2) {
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+.techno > p:last-child {
+    font-weight: 700;
+}
+/* sekcja portfolio */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.gallery{
+    /* margin: 20px; */
+}
+.overlay {
+    position: relative;
+}
+.overlay .link-gallery {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #111;
+    height: 60px;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+    color: rgb(247, 247, 239);
+    font-weight: 700;
+
+}
+.overlay:hover .link-gallery {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+/* Sekcja adress/contact */
+
+.adress-container {
+    display: flex;
+
+}
+.adress-info, .adress-form {
+    flex: 1;
 }
